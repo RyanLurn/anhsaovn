@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+import { Geist_Mono, Geist } from "next/font/google";
+
 import "@/app/globals.css";
 
 const geistSans = Geist({
@@ -13,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ánh Sao Việt Nam",
   description: "Công ty Ánh Sao Việt Nam - Dịch vụ làm web và quảng cáo online",
+  title: "Ánh Sao Việt Nam",
 };
 
 export default function RootLayout({
