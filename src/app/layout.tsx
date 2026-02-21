@@ -5,6 +5,7 @@ import { Geist_Mono, Geist } from "next/font/google";
 import "@/app/globals.css";
 import { ModeToggle } from "@/components/utils/mode-toggle";
 import { AppProviders } from "@/components/providers/app";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AppProviders>
+          <Toaster position="top-center" closeButton richColors />
           {children}
           <ModeToggle className="fixed top-3 right-3 z-50" />
         </AppProviders>
