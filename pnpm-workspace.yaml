@@ -4,3 +4,5 @@ ignoredBuiltDependencies:
 
 onlyBuiltDependencies:
   - lefthook
+  # shadcn/ui CLI needs this msw dependency to run properly
+  - msw
