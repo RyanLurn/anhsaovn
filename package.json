@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "type:gen": "next typegen",
+    "type:check": "pnpm run type:gen && tsc --noEmit"
   },
   "dependencies": {
     "next": "16.1.6",
