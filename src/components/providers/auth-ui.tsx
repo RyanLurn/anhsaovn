@@ -21,7 +21,6 @@ export function AuthUIProvider({ children }: { children: ReactNode }) {
       replace={(href) => router.replace(href as Route)}
       navigate={(href) => router.push(href as Route)}
       authClient={authClient}
-      // @ts-expect-error: Incompatible type API because typed route is enabled
       Link={Link}
     >
       {children}
